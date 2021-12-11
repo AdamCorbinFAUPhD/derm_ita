@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-requirements = ["ipython>=6", "nbformat>=4", "nbconvert>=5", "requests>=2"]
+requirements = ["numpy>=1.21", "Pillow>=8.4", "setuptools>=57"]
 
 setup(
     name="derm_ita",
