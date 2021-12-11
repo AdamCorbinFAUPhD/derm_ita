@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: derm-ita
+Version: 0.0.1
+Summary: A package with different strategies to compute individual typology angle
+Home-page: https://github.com/acorbin3/derm_ita
+Author: Adam Corbin
+Author-email: acorbin3@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: The MIT License (MIT)
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# derm_ita
+
+
