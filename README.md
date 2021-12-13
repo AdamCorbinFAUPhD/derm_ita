@@ -9,7 +9,7 @@ The ITA value is used as a proxy to evaluate the skin tone of an image.
 
 The ITA uses the following equation
 
-ITA$ = archtan \left(\frac{L - 50}{b} \right) \times \frac{180<sup>\xB0</sup>}{\pi}$
+ITA$ = archtan \left(\frac{L - 50}{b} \right) \times \frac{180<sup>°</sup>}{\pi}$
 
 where $L$ is luminance and $b$ is amount of blue/yellow
 
@@ -69,23 +69,23 @@ Example of fitzpatrick scale
 
 |ITA Range| Skin Tone Category|
 |--|--|
-|55$<sup>\xB0</sup> <$ ITA | Type1|
-|41$<sup>\xB0</sup><$ ITA $\leq$ 55$<sup>\xB0</sup>$|Type2|
-|28$<sup>\xB0</sup><$ ITA $\leq$ 41$<sup>\xB0</sup>$|Type3|
-|19$<sup>\xB0</sup><$ ITA $\leq$ 28$<sup>\xB0</sup>$|Type4|
-|10$<sup>\xB0</sup><$ ITA $\leq$ 19$<sup>\xB0</sup>$|Type5|
-|ITA $\leq$ 10$<sup>\xB0</sup>$|Type6|
+|55$<sup>°</sup> <$ ITA | Type1|
+|41$<sup>°</sup><$ ITA $\leq$ 55$<sup>°</sup>$|Type2|
+|28$<sup>°</sup><$ ITA $\leq$ 41$<sup>°</sup>$|Type3|
+|19$<sup>°</sup><$ ITA $\leq$ 28$<sup>°</sup>$|Type4|
+|10$<sup>°</sup><$ ITA $\leq$ 19$<sup>°</sup>$|Type5|
+|ITA $\leq$ 10$<sup>°</sup>$|Type6|
 
 ## Table 2 Groh ranges
 
 |ITA Range| Skin Tone Category|
 |--|--|
-|40$<sup>\xB0</sup> <$ ITA | Type1|
-|23$<sup>\xB0</sup><$ ITA $\leq$ 40$<sup>\xB0</sup>$|Type2|
-|12$<sup>\xB0</sup><$ ITA $\leq$ 23$<sup>\xB0</sup>$|Type3|
-|0$<sup>\xB0</sup><$ ITA $\leq$ 12$<sup>\xB0</sup>$|Type4|
-|-25$<sup>\xB0</sup><$ ITA $\leq$ 0$<sup>\xB0</sup>$|Type5|
-|ITA $\leq$ -25$<sup>\xB0</sup>$|Type6|
+|40$<sup>°</sup> <$ ITA | Type1|
+|23$<sup>°</sup><$ ITA $\leq$ 40$<sup>°</sup>$|Type2|
+|12$<sup>°</sup><$ ITA $\leq$ 23$<sup>°</sup>$|Type3|
+|0$<sup>°</sup><$ ITA $\leq$ 12$<sup>°</sup>$|Type4|
+|-25$<sup>°</sup><$ ITA $\leq$ 0$<sup>°</sup>$|Type5|
+|ITA $\leq$ -25$<sup>°</sup>$|Type6|
 
 [Groh source](https://openaccess.thecvf.com/content/CVPR2021W/ISIC/papers/Groh_Evaluating_Deep_Neural_Networks_Trained_on_Clinical_Images_in_Dermatology_CVPRW_2021_paper.pdf)
 
@@ -93,26 +93,26 @@ Example of fitzpatrick scale
 
 |ITA Range| Skin Tone Category|
 |--|--|
-|55$<sup>\xB0</sup> <$ ITA | Very Light|
-|48$<sup>\xB0</sup><$ ITA $\leq$ 55$<sup>\xB0</sup>$|Light 2|
-|41$<sup>\xB0</sup><$ ITA $\leq$ 48$<sup>\xB0</sup>$|Light 1|
-|34.5$<sup>\xB0</sup><$ ITA $\leq$ 41$<sup>\xB0</sup>$|Intermediate 2|
-|28$<sup>\xB0</sup><$ ITA $\leq$ 34.5$<sup>\xB0</sup>$|Intermediate 1|
-|18$<sup>\xB0</sup><$ ITA $\leq$ 28$<sup>\xB0</sup>$|Tan2|
-|10$<sup>\xB0</sup><$ ITA $\leq$ 18$<sup>\xB0</sup>$|Tan1|
-|ITA $\leq$ 10$<sup>\xB0</sup>$|Dark|
+|55$<sup>°</sup> <$ ITA | Very Light|
+|48$<sup>°</sup><$ ITA $\leq$ 55$<sup>°</sup>$|Light 2|
+|41$<sup>°</sup><$ ITA $\leq$ 48$<sup>°</sup>$|Light 1|
+|34.5$<sup>°</sup><$ ITA $\leq$ 41$<sup>°</sup>$|Intermediate 2|
+|28$<sup>°</sup><$ ITA $\leq$ 34.5$<sup>°</sup>$|Intermediate 1|
+|18$<sup>°</sup><$ ITA $\leq$ 28$<sup>°</sup>$|Tan2|
+|10$<sup>°</sup><$ ITA $\leq$ 18$<sup>°</sup>$|Tan1|
+|ITA $\leq$ 10$<sup>°</sup>$|Dark|
 
 [Kinyanjui source](http://krvarshney.github.io/pubs/KinyanjuiOCCPSV_miccai2020.pdf)
 
 ## Del Bino ranges
 |ITA Range| Skin Tone Category|
 |--|--|
-|55$<sup>\xB0</sup> <$ ITA | Very Light|
-|41$<sup>\xB0</sup><$ ITA $\leq$ 55$<sup>\xB0</sup>$|Light|
-|28$<sup>\xB0</sup><$ ITA $\leq$ 41$<sup>\xB0</sup>$|Intermediate|
-|10$<sup>\xB0</sup><$ ITA $\leq$ 28$<sup>\xB0</sup>$|Tan|
-|-30$<sup>\xB0</sup><$ ITA $\leq$ 10$<sup>\xB0</sup>$|Brown|
-|ITA $\leq$ -30$<sup>\xB0</sup>$|Dark|
+|55$<sup>°</sup> <$ ITA | Very Light|
+|41$<sup>°</sup><$ ITA $\leq$ 55$<sup>°</sup>$|Light|
+|28$<sup>°</sup><$ ITA $\leq$ 41$<sup>°</sup>$|Intermediate|
+|10$<sup>°</sup><$ ITA $\leq$ 28$<sup>°</sup>$|Tan|
+|-30$<sup>°</sup><$ ITA $\leq$ 10$<sup>°</sup>$|Brown|
+|ITA $\leq$ -30$<sup>°</sup>$|Dark|
 
 [Del Bino source](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241843)
 
