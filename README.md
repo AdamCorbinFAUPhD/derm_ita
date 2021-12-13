@@ -6,7 +6,7 @@ up between computing the individual typology angle(ITA) and converting the ITA v
 # Computing ITA value
 TODO - go into what ita is, screenshot, add equation, and boarder removal
 
-The intended function calls will be available [here](derm_ita/blob/master/derm_ita/derm_ita.py) 
+The intended function calls will be available [here](derm_ita/derm_ita.py) 
 
 ## Full image ITA
 One ITA computation is conducted on the full image regardless of any extra artifacts such as skin markings, lesions
@@ -49,5 +49,5 @@ More detailed info at [Random Patches](derm_ita/random_patches.py#L9).
 - Best used on dermoscopic images where the image is focused on a skin lesion.
 
 # Contribute or report issues
-If you would like to contribute please submit a [Feature request](derm_ita/issues/new?assignees=&labels=&template=feature_request.md&title=). 
-If you find an issue please submit a [Bug Report](derm_ita/issues/new?assignees=&labels=&template=bug_report.md&title=)
+If you would like to contribute please submit a [Feature request](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=feature_request.md&title=). 
+If you find an issue please submit a [Bug Report](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=bug_report.md&title=)
