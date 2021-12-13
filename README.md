@@ -49,5 +49,5 @@ More detailed info at [Random Patches](derm_ita/random_patches.py#L9).
 - Best used on dermoscopic images where the image is focused on a skin lesion.
 
 # Contribute or report issues
-If you would like to contribute please submit a [Feature request](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=feature_request.md&title=). 
+If you would like to contribute please submit a [Feature request](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=feature_request.md&title=).   
 If you find an issue please submit a [Bug Report](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=bug_report.md&title=)
