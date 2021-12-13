@@ -9,7 +9,7 @@ The ITA value is used as a proxy to evaluate the skin tone of an image.
 
 The ITA uses the following equation
 
-ITA = archtan \left(\frac{L - 50}{b} \right) \times \frac{180<sup>°</sup>}{\pi}
+![](http://mathurl.com/render.cgi?ITA%24%20%3D%20archtan%20%5Cleft%28%5Cfrac%7BL%20-%2050%7D%7Bb%7D%20%5Cright%29%20%5Ctimes%20%5Cfrac%7B180%5E%5Ccirc%7D%7B%5Cpi%7D%24%5Cnocache)
 
 where L is luminance and b is amount of blue/yellow
 
