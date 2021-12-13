@@ -64,6 +64,8 @@ which different skin tones were affected by sun exposure[<sup>[1]</sup>](https:/
 Example of fitzpatrick scale
 ![](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0241843/1/pone.0241843.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211213%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211213T095203Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=42d5d7755b000b9b13e3d8198d6eeb9d76d27868a0b5443f36e7c051e14c6e9b2b8fdf5423916c15a3697cbd4c905c59b02debb8d088abb4ec185ac6e5ca9350ac54fdd9c7a8943f4bef108627c17ee9b161635421116fd3636e7a7d66072fb9cfb64038283323146817d54c6dc1ced4d4f03cb5727706c70547a409bfa78c503dbf162d4e679eb803b5615a0498cab3de2fe5b91c750224c263f90fb824d9c434744e3a9048cc8827410cbd799432f66c80d548741557d31a250ca8f5441b3ab656a2165d7579508a13a892d1472a2d432b781d1e33d7801d806baf960ef52f56849e928d253259248e63df909b1bcf7fcc7f6babe768b924f0be62b72b5f19)
 
+## Functions
+The different scales to convert ITA to a skin tone can be found on [skin_tone_classification](derm_ita/skin_tone_classification.py)
 
 ## Table 1 Fitzpatrick ranges
 
