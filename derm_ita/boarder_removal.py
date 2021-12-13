@@ -1,6 +1,7 @@
 from PIL import Image
 import math
 
+
 # boarder trimming
 def get_border_removal_size(image: Image, border_removal_percentage: float = .04, patch_width: int = 8):
     """

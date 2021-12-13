@@ -30,33 +30,30 @@ def compute_ita_from_lab(lab):
     return ita
 
 
-def compute_ita(image: Image):
-    """
-    This function takes in an image and outputs the ITA value of image. To compute the ITA value the image needs
-    to be converted from an RGB format to a LAB format type.
-    :param image: input image
-    """
-
-    lab = np.array(skimage.color.rgb2lab(image))
-
-    return compute_ita_from_lab(lab)
 
 
-def format_image_and_get_lab_patches(image: Image, border_removal_percentage: float = 0.04, patch_width: int = 8):
+
+def format_image_and_get_lab_patches(image: Image, patch_width: int = 8, remove_boarder: bool = True,
+                                     border_removal_percentage: float = 0.04):
     """
     This function will remove the boarder, convert the whole image from RGB to LAB and then using Patchify
     tool it will create patches. These patches are non-overlapping that create a grid over the whole image.
+
     :param image: input image
-    :param border_removal_percentage: how much of the boarder to remove
     :param patch_width: the width size of the patches in pixels.
+    :param remove_boarder: The flag to determine if the boarder should be removed
+    :param border_removal_percentage: how much of the boarder to remove
     :return: A list of patches that are in a LAB format
     """
 
     # Crop image to remove the pixels from the boarder
-    w, h = image.size
-    removal_size = get_border_removal_size(image, border_removal_percentage, patch_width)
-    cropped_area = (removal_size, removal_size, w - removal_size, h - removal_size)
-    cropped_image = image.crop(cropped_area)
+    if remove_boarder:
+        w, h = image.size
+        removal_size = get_border_removal_size(image, border_removal_percentage, patch_width)
+        cropped_area = (removal_size, removal_size, w - removal_size, h - removal_size)
+        cropped_image = image.crop(cropped_area)
+    else:
+        cropped_image = image
 
     # Convert image to lab values
     lab = np.array(skimage.color.rgb2lab(cropped_image))
@@ -88,26 +85,3 @@ def compute_ita_from_lab(lab_image):
 
     ita = math.atan2(np.nanmean(l) - 50, np.nanmean(b)) * (180 / np.pi)
     return ita
-
-
-def compute_ita(image: Image, crop_border=False, border_removal_percentage: float = 0.04, patch_width: int = 8):
-    """
-    This function takes in an image and outputs the ITA value of image. To compute the ITA value the image needs
-    to be converted from an RGB format to a LAB format type.
-
-    :param image: input image
-    :param crop_border: option to remote part of the baorder
-    :param border_removal_percentage: how much of the boarder to remove
-    :param patch_width: the width size of the patches in pixels.
-    :return: ITA value computed from the input image
-    """
-
-    if crop_border:
-        w, h = image.size
-        removal_size = get_border_removal_size(image, border_removal_percentage, patch_width)
-        cropped_area = (removal_size, removal_size, w - removal_size, h - removal_size)
-        image = image.crop(cropped_area)
-
-    lab = np.array(skimage.color.rgb2lab(image))
-
-    return compute_ita_from_lab(lab)

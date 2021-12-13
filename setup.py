@@ -18,6 +18,6 @@ setup(
     install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3.9",
-        "License :: The MIT License (MIT)",
+        "License :: OSI Approved :: MIT License",
     ],
 )

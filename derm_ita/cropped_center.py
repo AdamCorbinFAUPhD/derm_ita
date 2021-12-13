@@ -1,8 +1,14 @@
+import math
+
 from PIL import Image
 from ita_core_computations import format_image_and_get_lab_patches, compute_ita_from_lab
 
 
-def get_cropped_center_patches_ita_list(image: Image, verbose=False):
+def get_cropped_center_patches_ita_list(image: Image,
+                                        patch_width: int = 8,
+                                        remove_boarder: bool = True,
+                                        border_removal_percentage: float = 0.04,
+                                        verbose=False):
     """
     For the structure patches approach the first row, the last row, first column and last column will be
     sampled for the ITA values.
@@ -12,9 +18,13 @@ def get_cropped_center_patches_ita_list(image: Image, verbose=False):
     Then dividing the width and height by 2 will be the mid-point which we can take the offset and do a +-
     to get a range where we dont want to capture the ITA values as long as the x and y indexes dont fall between
     both ranges then we will capture the ITA values of the image.
+
     :param image: input image
+    :param patch_width: The width of the patch in pixels. The patches are squares
+    :param remove_boarder: The flag to determine if the boarder should be removed
+    :param border_removal_percentage: The percentage of pixes that should be removed on the boarder
     """
-    patches = format_image_and_get_lab_patches(image)
+    patches = format_image_and_get_lab_patches(image, patch_width, remove_boarder, border_removal_percentage)
 
     center_removal_percentage = .70 / 2
     h = len(patches)
