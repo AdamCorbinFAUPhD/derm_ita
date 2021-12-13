@@ -3,6 +3,8 @@
 This library has utilities to help evaluate skin tones in dermatology images. It can be broken 
 up between computing the individual typology angle(ITA) and converting the ITA value to a skin tone type.
 
+The skin tone classification metadata can enhance dermoscopic datasets when trying to evaluate fairness. 
+
 # Computing ITA value
 
 The ITA value is used as a proxy to evaluate the skin tone of an image. 
