@@ -1,3 +1,5 @@
 numpy>=1.21
 Pillow>=8.4
 setuptools>=57
+scikit-image>=0.19
+patchify>=0.2.3

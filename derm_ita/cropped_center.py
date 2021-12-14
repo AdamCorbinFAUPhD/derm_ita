@@ -1,7 +1,7 @@
 import math
 
 from PIL import Image
-from ita_core_computations import format_image_and_get_lab_patches, compute_ita_from_lab
+from derm_ita.ita_core_computations import format_image_and_get_lab_patches, compute_ita_from_lab
 
 
 def get_cropped_center_patches_ita_list(image: Image,

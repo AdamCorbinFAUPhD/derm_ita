@@ -4,7 +4,7 @@ from PIL import Image
 import skimage
 from patchify import patchify
 
-from boarder_removal import get_border_removal_size
+from derm_ita.boarder_removal import get_border_removal_size
 
 
 def compute_ita_from_lab(lab):

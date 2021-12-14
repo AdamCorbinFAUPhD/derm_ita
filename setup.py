@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-requirements = ["numpy>=1.21", "Pillow>=8.4", "setuptools>=57"]
+requirements = ["numpy>=1.21", "Pillow>=8.4", "setuptools>=57", "scikit-image>=0.19","patchify>=0.2.3"]
 
 setup(
     name="derm_ita",
-    version="0.0.5",
+    version="0.0.7",
     author="Adam Corbin",
     author_email="acorbin3@gmail.com",
     description="A package with different strategies to compute individual typology angle",

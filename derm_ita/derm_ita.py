@@ -5,11 +5,11 @@ import numpy as np
 import skimage
 from PIL import Image
 
-from cropped_center import get_cropped_center_patches_ita_list
-from boarder_removal import get_border_removal_size
-from ita_core_computations import compute_ita_from_lab
-from random_patches import get_random_patches_ita_list
-from structured_patches import get_structured_patches_ita_list
+from derm_ita.cropped_center import get_cropped_center_patches_ita_list
+from derm_ita.boarder_removal import get_border_removal_size
+from derm_ita.ita_core_computations import compute_ita_from_lab
+from derm_ita.random_patches import get_random_patches_ita_list
+from derm_ita.structured_patches import get_structured_patches_ita_list
 
 
 def get_ita(image: Image, remove_boarder: bool = True, border_removal_percentage: float = 0.04):
