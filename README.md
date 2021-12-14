@@ -5,6 +5,26 @@ up between computing the individual typology angle(ITA) and converting the ITA v
 
 The skin tone classification metadata can enhance dermoscopic datasets when trying to evaluate fairness. 
 
+# Installation
+`pip install derm-ita`
+
+# Usage
+## ITA computation
+``` python
+from derm_ita import get_ita
+from PIL import Image
+
+
+whole_image_ita = get_ita(image=Image.open("skin.png"))
+```
+## Classification
+``` python
+from derm_ita import get_kinyanjui_type
+
+kinyanjui_type = get_kinyanjui_type(whole_image_ita)
+```
+
+
 # Computing ITA value
 
 The ITA value is used as a proxy to evaluate the skin tone of an image. 
@@ -19,7 +39,7 @@ All the approaches have the ability to remove the boarder. For those who are usi
 on dermoscopic datasets its advised that use the defaults to remove at least 4% of the boarder so the dark
 corners will be removed for the ITA computation. 
 
-The intended function calls will be available [here](derm_ita/derm_ita.py) 
+The intended function calls will be available [here](https://github.com/acorbin3/derm_ita/blob/master/derm_ita/derm_ita.py) 
 
 ## Full image ITA
 One ITA computation is conducted on the full image regardless of any extra artifacts such as skin markings, lesions
@@ -34,7 +54,7 @@ The Cropped Center approach tries to select the most of the image as possible bu
 center is removed. This is intended as many dermoscopic images have skin lesions in the center of the image
 which could throw off the ITA result.
 
-More detailed info at [Cropped Center](derm_ita/cropped_center.py#L7).
+More detailed info at [Cropped Center](https://github.com/acorbin3/derm_ita/blob/master/derm_ita/cropped_center.py#L7).
 
 ![](https://i.imgur.com/pBJbePK.png)
 
@@ -42,7 +62,7 @@ More detailed info at [Cropped Center](derm_ita/cropped_center.py#L7).
 The Structured patches approach takes the first row, the last row, first column and last column will be
     sampled for the ITA values. 
 
-More detailed info at [Structured Patches](derm_ita/structured_patches.py#L5).
+More detailed info at [Structured Patches](https://github.com/acorbin3/derm_ita/blob/master/derm_ita/structured_patches.py#L5).
 
 ![](https://i.imgur.com/ifEwWk3.png)
 
@@ -51,7 +71,7 @@ The premise behind random patches is that a set of patches that do not overlap a
     be sampled to take the ITA value from. The thought would be that because its a random sample that the majority should
     cover or represent the skin tone. It is possible that some patches could cover a skin lesion which will be address in
     a future approach.
-More detailed info at [Random Patches](derm_ita/random_patches.py#L9).
+More detailed info at [Random Patches](https://github.com/acorbin3/derm_ita/blob/master/derm_ita/random_patches.py#L9).
 
 ![](https://i.imgur.com/9wJIkky.png)
 
@@ -67,7 +87,7 @@ Example of fitzpatrick scale
 ![](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0241843/1/pone.0241843.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211213%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211213T095203Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=42d5d7755b000b9b13e3d8198d6eeb9d76d27868a0b5443f36e7c051e14c6e9b2b8fdf5423916c15a3697cbd4c905c59b02debb8d088abb4ec185ac6e5ca9350ac54fdd9c7a8943f4bef108627c17ee9b161635421116fd3636e7a7d66072fb9cfb64038283323146817d54c6dc1ced4d4f03cb5727706c70547a409bfa78c503dbf162d4e679eb803b5615a0498cab3de2fe5b91c750224c263f90fb824d9c434744e3a9048cc8827410cbd799432f66c80d548741557d31a250ca8f5441b3ab656a2165d7579508a13a892d1472a2d432b781d1e33d7801d806baf960ef52f56849e928d253259248e63df909b1bcf7fcc7f6babe768b924f0be62b72b5f19)
 
 ## Functions
-The different scales to convert ITA to a skin tone can be found on [skin_tone_classification](derm_ita/skin_tone_classification.py)
+The different scales to convert ITA to a skin tone can be found on [skin_tone_classification](https://github.com/acorbin3/derm_ita/blob/master/derm_ita/skin_tone_classification.py)
 
 ## Table 1 Fitzpatrick ranges
 
@@ -125,5 +145,5 @@ The different scales to convert ITA to a skin tone can be found on [skin_tone_cl
 - Best used on dermoscopic images where the image is focused on a skin lesion.
 
 # Contribute or report issues
-If you would like to contribute please submit a [Feature request](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=feature_request.md&title=).   
-If you find an issue please submit a [Bug Report](https://github.com/acorbin3/derm_ita/issues/new?assignees=&labels=&template=bug_report.md&title=)
+If you would like to contribute please submit a [Feature request](https://github.com/acorbin3/https://github.com/acorbin3/derm_ita/blob/master/derm_ita/issues/new?assignees=&labels=&template=feature_request.md&title=).   
+If you find an issue please submit a [Bug Report](https://github.com/acorbin3/https://github.com/acorbin3/derm_ita/blob/master/derm_ita/issues/new?assignees=&labels=&template=bug_report.md&title=)
