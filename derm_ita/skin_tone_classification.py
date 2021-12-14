@@ -94,7 +94,7 @@ def get_fitzpatrick_type(ita):
         print(f"None cat: {ita}")
 
 
-def add_groh_ita_category(ita):
+def get_groh_ita_category(ita):
     """
     Developed based on the empirical distribution of ITA scores minimizing overall error
     https://openaccess.thecvf.com/content/CVPR2021W/ISIC/papers/Groh_Evaluating_Deep_Neural_Networks_Trained_on_Clinical_Images_in_Dermatology_CVPRW_2021_paper.pdf

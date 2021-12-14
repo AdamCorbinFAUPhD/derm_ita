@@ -7,7 +7,7 @@ requirements = ["numpy>=1.21", "Pillow>=8.4", "setuptools>=57"]
 
 setup(
     name="derm_ita",
-    version="0.0.2",
+    version="0.0.5",
     author="Adam Corbin",
     author_email="acorbin3@gmail.com",
     description="A package with different strategies to compute individual typology angle",
